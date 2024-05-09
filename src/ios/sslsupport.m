@@ -90,6 +90,8 @@
         NSLog(@"%@", @"JSON BODY POST");
     }
     
+    [manager.requestSerializer setTimeoutInterval:LONG_MAX];
+
     if(UserAgent != nil) {
         [manager.requestSerializer setValue:UserAgent forHTTPHeaderField:@"User-Agent"];
     }
