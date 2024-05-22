@@ -574,14 +574,14 @@
 }
 
 - (void)post:(CDVInvokedUrlCommand*)command {
-    [send command:command method:@"POST"];
+    [self send:command method:@"POST"];
 }
 
 - (void)put:(CDVInvokedUrlCommand*)command {
-    [send command:command method:@"PUT"];
+    [self send:command method:@"PUT"];
 }
 - (void)delete:(CDVInvokedUrlCommand*)command {
-    [send command:command method:@"DELETE"];
+    [self send:command method:@"DELETE"];
 }
 
 
